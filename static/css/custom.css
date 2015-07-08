@@ -104,7 +104,7 @@ h4 {
 	border-radius:50%;
 }
 
-.scroll-up:hover { 
+.scroll-up:hover {
 	background-color:#FFFFFF;
 	border-color:rgba(0,0,0,0.2);
 	padding-top:0px;
@@ -236,7 +236,7 @@ h4 {
 }
 
 /*------------------------------
-	HEADER 	
+	HEADER
 ------------------------------*/
 
 header {
@@ -250,7 +250,7 @@ header {
   	/*background-color:#FCFCFB;*/
   	background-color:#326799;
 
-  	
+
 }
 
 .jumbotron img {
@@ -305,7 +305,7 @@ header {
 }
 
 #slideshow i {
-	color:#A5A8B0;	
+	color:#A5A8B0;
 }
 
 .carousel-inner {
@@ -470,7 +470,7 @@ header {
 	text-align:center;
 	font-size:14px;
 	border-radius:50%;
-	color:#FCFCFB; 
+	color:#FCFCFB;
 	background-color:#A5A8B0;
 	border:5px solid #326799;
 	display: inline-block;
@@ -506,6 +506,24 @@ header {
 
 }
 
+.material-icons {
+	/*padding: 10px;
+	background-color:#FFFFFF;*/
+	font-size:108px;
+	/*color:#326799;*/
+}
+
+/*
+	Google samples
+.material-icons.md-dark { color: rgba(30, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }}
+*/
+
+
+
 #services {
 	height:680px;
 }
@@ -528,7 +546,7 @@ header {
 	border-bottom:3px solid #ED5A64;
 	font-weight:600;
 	font-size:16px;
-	
+
 }
 /*------------------------------
 	SHOWCASE
@@ -623,7 +641,7 @@ header {
 }
 
 blockquote footer {
-	color:#A5A8B0; 
+	color:#A5A8B0;
 	font-size:18px;
 }
 
@@ -753,7 +771,7 @@ blockquote footer {
 .cs-style-4 figcaption a {
 	position: absolute;
 	bottom: 15px;
-	
+
 	background-color:#ED5A64;
 }
 
@@ -793,7 +811,7 @@ blockquote footer {
 
 .blog-body .btn {
 	margin:10px 0;
-	
+
 }
 
 .blog-post .blog-info  {
@@ -855,7 +873,7 @@ blockquote footer {
 	background-color:#f0f0f0;
 	border-radius:5px;
 	margin-top:20px;
-	
+
 }
 
 #pricing .pricing-headline {
@@ -1005,6 +1023,11 @@ blockquote footer {
 	background-color:#222222;
 }
 
+#contact p {
+	text-align:left;
+	vertical-align: middle;
+}
+
 #contact h3 {
 	text-align:left;
 	margin:0 0 20px;
@@ -1042,6 +1065,10 @@ blockquote footer {
 	text-align:left;
 }
 
+#contact .contact-text {
+	text-align: left;
+}
+
 #contact .contact-info p {
 	border-bottom:2px dashed #326799;
 	margin:0;
@@ -1055,6 +1082,11 @@ blockquote footer {
 
 .contact-image {
 	width:164px;
+	padding-bottom:15px;
+}
+
+.contact-logo {
+	width:300px;
 	padding-bottom:15px;
 }
 
@@ -1093,7 +1125,7 @@ blockquote footer {
 #footer .brands li a {
 	background-color:#FFFFFF;
 	color:#326799;
-	
+
 	border-radius:50px;
 	border:0;
 }
@@ -1107,6 +1139,11 @@ blockquote footer {
 	margin:0;
 }
 
+#footer .thanks {
+	padding-top: 10px;
+	font-size: 12px;
+}
+
 /*------------------------------
 	MEDIUM DEVICES
 ------------------------------*/
@@ -1115,11 +1152,11 @@ blockquote footer {
 	.carousel .carousel-control {
 		top:140px;
 	}
-	
+
 	#blog .line i {
 		left:138px;
 	}
-	
+
 	#contact .macbook-inner {
 		top:56px;
 		left:137px;
@@ -1130,15 +1167,15 @@ blockquote footer {
 		margin-bottom:21px;
 		height:32px;
 	}
-	
+
 	#contact textarea.form-control {
 		height:100px;
 	}
-	
+
 	.contact-image {
 		width:74px;
 	}
-		
+
 }
 
 /*------------------------------
@@ -1149,29 +1186,29 @@ blockquote footer {
 	header {
 		height:auto;
 	}
-	
+
 	#skills-toggle {
 		margin-top:25px;
 	}
-	
+
 	#services {
 		height:auto;
 	}
-	
+
 	#carousel-reference {
 		top:24px;
 		right:35px;
 		left:35px;
 	}
-	
+
 	.carousel .carousel-control {
 		top:100px;
 	}
-	
+
 	#blog .line i {
 		left:100px;
 	}
-	
+
 	#contact .macbook-inner {
 		top:43px;
 		left:108px;
@@ -1179,7 +1216,7 @@ blockquote footer {
 		height:334px;
 		padding:40px 20px;
 	}
-	
+
 	#contact .form-control {
 		margin-bottom:7px;
 		height:28px;
@@ -1188,21 +1225,21 @@ blockquote footer {
 	#contact textarea.form-control {
 		height:70px;
 	}
-	
+
 	#contact h3 {
 		margin:0 0 10px;
 		font-size:22px;
 	}
-		
+
 	.macbook-inner .btn {
-		padding:4px 8px;	
+		padding:4px 8px;
 	}
-	
+
 	#contact .help-block {
 		font-size: 12px;
 		top: -20px;
 	}
-	
+
 	.tweets p {
 		line-height:20px;
 		font-size: 14px;
@@ -1217,17 +1254,17 @@ blockquote footer {
 	.navbar-collapse {
 		box-shadow:none;
 	}
-	
-	.navbar-default {	
+
+	.navbar-default {
 		height:58px;
 		padding-top: 0;
 	}
-	
+
 	.navbar-logo {
 		padding:5px 0 0 15px;
 		width:55px;
 	}
-	
+
 	.navbar-default .navbar-toggle {
 		margin:0;
 		background-color:#326799;
@@ -1239,20 +1276,20 @@ blockquote footer {
 		color:#FFFFFF;
 		font-size:24px;
 	}
-	
-	.navbar-default .navbar-toggle:hover, 
+
+	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus {
 		background-color: #326799;
 	}
-	
+
 	.navbar-brand{
 		top:-9px;
 		position:relative;
 	}
-	
-	
+
+
 	h2 {
-		font-size:35px;	
+		font-size:35px;
 	}
 
 	.content-first {
@@ -1262,7 +1299,7 @@ blockquote footer {
 	.content-second {
 		padding:30px 0;
 	}
-	
+
 	.scrollpoint {
 		opacity:1;
 	}
@@ -1270,22 +1307,22 @@ blockquote footer {
 	header {
 		height:auto;
 	}
-	
+
 	.social-wrapper h2 {
 		display:inline;
 		padding:0 15px 0 15px;
 		font-size:38px;
 	}
-	
+
 	.jumbotron img {
 		max-height:150px;
 	}
-	
+
 	#about {
 		padding-bottom:0;
 		padding-top:0;
 	}
-	
+
 	.tweets p {
 		line-height:22px;
 	}
@@ -1293,29 +1330,29 @@ blockquote footer {
 	#skills-toggle {
 		margin-top:25px;
 	}
-	
+
 	#blog .blog-main p {
 		padding-bottom:15px;
 		border-bottom:4px dashed #2C3E50;
 	}
-	
+
 	.blog-post {
 		margin:0 50px 25px;
 	}
-	
+
 	.blog-body p {
 		text-align:left;
 		font-size:14px;
 	}
-	
+
 	#skills {
 		padding:10px 0;
 	}
-	
+
 	#skills .chart {
 		margin-bottom:50px;
 	}
-	
+
 	.tweets {
 		min-height:90px;
 	}
@@ -1323,78 +1360,78 @@ blockquote footer {
 	.tweets p {
 		font-size:12px;
 	}
-	
+
 	.tweets i {
 		font-size:48px;
 		color:#34495E;
 	}
-	
+
 	#services {
 		height:auto;
 	}
-	
+
 	.showcase-text .media {
 		margin-bottom:20px;
 	}
-	
+
 	.blockquote-reverse p {
 		font-size:16px;
 	}
-	
+
 	blockquote footer {
 		font-size:14px;
 	}
-	
+
 	.grid li {
 		width: 370px;
 	}
-	
+
 	section > p {
 		padding:0 20px;
 	}
-	
+
 	.pricing-table {
 		margin:0 50px;
 	}
-	
+
 	#testimonials .media a.pull-left img {
 		max-width:50px;
 	}
-	
+
 	#testimonials .media .media-body p {
 		text-align:left;
 	}
-	
+
 	#contact {
 		padding:20px;
 	}
-	
+
 	#contact .macbook-inner {
 		position:static;
 		width:100%;
 		height:auto;
 		padding:0px 0px;
 	}
-	
+
 	#contact .macbook-inner.black {
 		background-color:transparent;
 	}
-	
+
 	#contact .macbook-inner > .animated {
 		-webkit-animation-duration: 0;
 		  animation-duration: 0;
 		  -webkit-animation-fill-mode: both;
 		  animation-fill-mode: both;
 	}
-	
+
 	#contact .contact-alert .alert {
 		margin-bottom:20px;
 	}
-	
+
 	#contact .contact-info {
 		margin-top:35px;
 	}
-	
+
 	.btn-footer {
 		margin-top:10px;
 	}
@@ -1402,11 +1439,11 @@ blockquote footer {
 	.timeline {
 		margin:25px 0 0 350px;
 	}
-	
+
 	.event .event-info {
 		width:340px;
 	}
-	
+
 	.event .event-info .date {
 		margin-left:265px;
 	}
@@ -1417,15 +1454,15 @@ blockquote footer {
 ------------------------------*/
 
 @media (max-width:600px) {
-	
+
 	.timeline {
 		margin:25px 0 0 270px;
 	}
-	
+
 	.event .event-info {
 		width:260px;
 	}
-	
+
 	.event .event-info .date {
 		margin-left:185px;
 	}
@@ -1436,24 +1473,24 @@ blockquote footer {
 ------------------------------*/
 
 @media (max-width:548px) {
-	
-	
+
+
 	.timeline {
 		margin:25px 0 0 245px;
 	}
-	
+
 	.event .event-info {
 		width:235px;
 	}
-	
+
 	.event .event-info .date {
 		margin-left:160px;
 	}
-	
+
 	.grid li {
 		width: 370px;
 	}
-	
+
 	.pricing-table {
 		margin:0 30px;
 	}
@@ -1467,15 +1504,15 @@ blockquote footer {
 	.timeline {
 		margin:25px 0 0 210px;
 	}
-	
+
 	.event .event-info {
 		width:200px;
 	}
-	
+
 	.event .event-info .date {
 		margin-left:125px;
 	}
-	
+
 	.blog-post {
 		margin:0 10px 25px;
 	}
@@ -1486,39 +1523,38 @@ blockquote footer {
 ------------------------------*/
 
 @media (max-width:320px) {
-	
+
 	.jumbotron .btn {
 		margin-bottom:15px;
 		margin-right:0px;
 	}
-	
+
 	.tweets p {
 		line-height:18px;
 	}
-	
+
 	.blog-post {
 		margin:0 0 25px;
 	}
-	
+
 	.timeline {
 		margin:25px 0 0 110px;
 	}
-	
+
 	.event .event-info {
 		width:100px;
 	}
-	
+
 	.event .event-info .date {
 		margin-left:25px;
 	}
-	
+
 	.grid li {
 		width: 280px;
 	}
-	
+
 	.pricing-table {
 		margin:0;
 	}
-	
-}
 
+}
