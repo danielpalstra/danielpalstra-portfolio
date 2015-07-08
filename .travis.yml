@@ -1,0 +1,27 @@
+git:
+  submodules: false
+branches:
+  only:
+    - master
+language: go
+go:
+  - 1.4.2
+script: bash deploy.sh
+install:
+  - go get github.com/spf13/hugo
+notifications:
+  email:
+    recipients:
+      - daniel@danielpalstra.com
+    on_success: change
+    on_failure: always
+    branches:
+  only:
+    - master
+env:
+  global:
+    - ENCRYPTION_LABEL="3bbf9866bcf1"
+    - GIT_NAME="Daniel Palstra"
+    - GIT_EMAIL="daniel@danielpalstra.com"
+    - DEPLOY_REPO="git@github.com:danielpalstra/danielpalstra.github.io.git"
+    - DEPLOY_BRANCH="master"
