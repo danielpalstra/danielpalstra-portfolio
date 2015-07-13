@@ -1002,7 +1002,7 @@ blockquote footer {
 
 #contact {
 	color:#333333;
-	text-align:center;
+	/*text-align:center;*/
 }
 
 #contact .contact-alert .alert {
@@ -1063,10 +1063,6 @@ blockquote footer {
 	color:#FFFFFF;
 	padding:0 12px;
 	text-align:left;
-}
-
-#contact .contact-text {
-	text-align: left;
 }
 
 #contact .contact-info p {
