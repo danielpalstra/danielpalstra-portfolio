@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git config user.name "Travis-CI"
-git config user.email "travis@danielpalstra.com"
+git config --global user.name "Travis-CI"
+git config --global user.email "travis@danielpalstra.com"
 
 echo "Cloning target repository"
 git clone --branch ${TARGET_BRANCH} "https://${GH_REF}" public
