@@ -1028,6 +1028,10 @@ blockquote footer {
 	vertical-align: middle;
 }
 
+#contact h2 {
+	text-align: center;
+}
+
 #contact h3 {
 	text-align:left;
 	margin:20 0 30px;
