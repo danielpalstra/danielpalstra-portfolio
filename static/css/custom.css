@@ -492,6 +492,7 @@ header {
 /*------------------------------
 	SERVICES
 ------------------------------*/
+
 .service > h3 {
 	transition-duration:0.5s;
 }
@@ -503,13 +504,14 @@ header {
 .service > p {
 	line-height:22px;
 	text-align:justify;
-
 }
 
 .material-icons {
 	/*padding: 10px;
 	background-color:#FFFFFF;*/
 	font-size:108px;
+	/* Red color
+	color: #ED5A64;*/
 	/*color:#326799;*/
 }
 
