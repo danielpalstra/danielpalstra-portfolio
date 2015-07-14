@@ -15,13 +15,13 @@ notifications:
       - daniel@danielpalstra.com
     on_success: change
     on_failure: always
-    branches:
-  only:
-    - master
 env:
   global:
-    - ENCRYPTION_LABEL="3bbf9866bcf1"
-    - GIT_NAME="Daniel Palstra"
-    - GIT_EMAIL="daniel@danielpalstra.com"
-    - DEPLOY_REPO="git@github.com:danielpalstra/danielpalstra.github.io.git"
-    - DEPLOY_BRANCH="master"
+    - GH_REF="github.com/danielpalstra/danielpalstra.github.io.git"
+    - secure="F12p4nJXQn463HTD4IOfxFKS+dtaBB/y3LFpEYBrdO/qVMsksuO0zgFQn1MAXs6T1AORrxtOPQA7a0o0UqktTSP0wjnGv1p7LMlyLrvYxUPh4LuSgbEBIVfETdmRsRLWcmHfZHBMSFo1s6hJxeqLE/mo4vll6HCaptW21l/DlcypKeTHQwj7SOwyFNDnW4HuFRqzQdESH83Uomr8l036xAkO1QSOfcEoggxaHnIhdlOIOs2qct7NN8UKTb3t0JzW3zBzwt5+6qy/LvdKjF2uXOdSk5XHL8+gNqVZTdHHBmmIkODKnSV8dZjFxARp+YH79lNuR2a0PiWats8SX3rPmGF2VA+fh5n+Du1++Ifj9PUC/JN5rzLbI3SQEg1kO1IoL4QUnftjMgFsb/VTt10kV2vi3PAmMTI3LP4usWVxrrr7fxjblpptE6VJ/NEKWfGRUwzUSILB667feadbws3hACPoH12GO+JIEwtE0ZFPCh0cJoppVjFZKBTbA+3kS41M8ONMHj2QLDVVvtDYCg0jx2dncQhiNMtKOHAKQpRxMjjdr3JORGiPFgaEnwL54aCYxXLyOo9VxTvfjiiOMt29NxLQWOMySjMyVKZnrbqKsa24V4R62lDx/jeQRxcP6VKWZ083w5LBeo7rOGGgds5IyocWWtfukJx6cfR1ECmcz+Y="
+    - TARGET_BRANCH="master"
+#    - ENCRYPTION_LABEL="3bbf9866bcf1"
+#    - GIT_NAME="Daniel Palstra"
+#    - GIT_EMAIL="daniel@danielpalstra.com"
+#    - DEPLOY_REPO="git@github.com:danielpalstra/danielpalstra.github.io.git"
+#    - DEPLOY_BRANCH="master"
