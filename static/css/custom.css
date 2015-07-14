@@ -55,7 +55,7 @@ h4 {
 
 .content-first {
 	/*background-color:#34495E; */
-	background-color:##FCFCFB;
+	background-color:#FCFCFB;
 	padding:80px 0;
 	/*color:#FFFFFF;*/
 	color: #326799;
@@ -1030,7 +1030,7 @@ blockquote footer {
 
 #contact h3 {
 	text-align:left;
-	margin:0 0 20px;
+	margin:20 0 30px;
 	color:#333333;
 	font-weight:bold;
 	font-size:26px;
@@ -1043,6 +1043,11 @@ blockquote footer {
 	border:0;
 	margin-bottom:28px;
 	height:38px;
+}
+
+#contact .social {
+	padding-top: 30px;
+	text-align: center;
 }
 
 #contact textarea.form-control {

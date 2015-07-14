@@ -16,25 +16,35 @@ ul.social-network li {
 	margin: 0 5px;
 }
 
+.social-network a {
+	background-color: #326799;
+}
+
 
 /* footer social icons */
-.social-network a.icoRss:hover {
+.social-network a.icoRss {
 	background-color: #F56505;
 }
-.social-network a.icoFacebook:hover {
+.social-network a.icoGithub {
+	background-color: #000000;
+}
+.social-network a.icoFacebook {
 	background-color:#3B5998;
 }
-.social-network a.icoTwitter:hover {
+.social-network a.icoTwitter {
 	background-color:#33ccff;
 }
-.social-network a.icoGoogle:hover {
+.social-network a.icoGoogle {
 	background-color:#BD3518;
 }
-.social-network a.icoVimeo:hover {
+.social-network a.icoVimeo {
 	background-color:#0590B8;
 }
-.social-network a.icoLinkedin:hover {
+.social-network a.icoLinkedin {
 	background-color:#007bb7;
+}
+.social-network a.icoSkype {
+	background-color:#00aff0;
 }
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
@@ -81,7 +91,3 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }
-
-/*a {
- background-color: #D3D3D3;
-}*/
