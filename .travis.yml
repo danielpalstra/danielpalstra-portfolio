@@ -6,7 +6,7 @@ branches:
 language: go
 go:
   - 1.4.2
-script: bash deploy.sh
+script: bash deploy-pages.sh
 install:
   - go get github.com/spf13/hugo
 notifications:
