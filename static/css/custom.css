@@ -226,7 +226,6 @@ h4 {
 
 .navbar-collapse {
 	margin:0;
-	/*background-color:#A5A8B0;*/
 	background-color:#FCFCFB;
 	border:none;
 	border-radius:0;
@@ -792,6 +791,7 @@ blockquote footer {
 
 .blog-post {
 	background-color:#FCFCFB;
+	/*background-color:#326799;;*/
 	text-align:left;
 	border-radius:5px;
 	margin-top:30px;
@@ -804,6 +804,7 @@ blockquote footer {
 
 .blog-body h3 {
 	text-align:left;
+	color: #326799;
 }
 
 .blog-body p {

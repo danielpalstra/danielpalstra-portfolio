@@ -1,3 +1,16 @@
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
 baseurl = "http://danielpalstra.com"
-languageCode = "en-us"
+canonifyurls = true
 title = "Daniel Palstra - IT Consultancy - Freelance IT Consultant in middleware and cloud solutions"
+languageCode = "en-us"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "Tesla's Awesome Hugo Site"
+  author = "Nikola Tesla"

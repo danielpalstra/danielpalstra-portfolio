@@ -1,7 +1,7 @@
 var twitterConfig = {
   "id": '613432555052888064',
   "domId": '',
-  "maxTweets": 5,
+  "maxTweets": 10,
   "enableLinks": true,
   "showUser": false,
   "showTime": true,
@@ -21,7 +21,7 @@ function handleTweets(tweets){
       	html += '<div class="item active">' + tweets[n] + '</div>';
       }
       else {
-      	html += '<div class="item">' + tweets[n] + '</div>';	
+      	html += '<div class="item">' + tweets[n] + '</div>';
       }
       n++;
     }

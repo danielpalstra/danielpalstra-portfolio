@@ -1,68 +1,8 @@
 {{ partial "head.html" . }}
-<body id="page-top">
-	<a href="#page-top" class="scroll-up scroll"><i class="fa fa-chevron-up"></i></a>
-    <h1>Daniel Palstra - Freelance Middleware and Cloud consultant</h1>
+{{ partial "navbar.html" . }}
+{{ partial "jumbotron.html" . }}
 
-    {{ range .Data.Pages }}
-    	{{if eq .Type "index" }}
-        {{.Content}}
-    	{{end}}
-		{{ end }}
 
-    <!-- ==========================
-    	HEADER - START
-    =========================== -->
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavigation"><i class="fa fa-bars"></i></button>
-                    <img src="image/danielpalstra-logo.png" class="navbar-logo pull-left" alt="Daniel Palstra Consultancy" />
-                    <!--a href="index.html" class="navbar-brand animated flipInX">Daniel Palstra</a-->
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="myNavigation">
-
-                    <ul class="nav navbar-nav navbar-right animated flipInX">
-                        <li><a href="#about" class="scroll">About me</a></li>
-                        <li><a href="#reference" class="scroll">Technology</a></li>
-                        <!-- <li><a href="#blog" class="scroll">Blog</a></li> -->
-                        <li><a href="#contact" class="scroll">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container -->
-        </nav>
-
-        <div class="jumbotron">
-            <img src="image/dp.png" class="img-responsive scrollpoint sp-effect3" alt="Daniel Palstra Consultancy" />
-            <div class="social-wrapper">
-                <ul class="brands brands-inline hidden-xs scrollpoint sp-effect1">
-                    <li><a href="https://github.com/danielpalstra"><i class="fa fa-github  hi-icon-effect-8"></i></a></li>
-                    <li><a href="https://twitter.com/dpalstra"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-                <h2 class="scrollpoint sp-effect3">DANIEL PALSTRA</h2>
-                <ul class="brands brands-inline hidden-xs scrollpoint sp-effect2">
-                    <li><a href="https://plus.google.com/+DanielPalstra"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/danielpalstra"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-            <!-- Slideshow start -->
-            <div id="slideshow" class="carousel slide vertical scrollpoint sp-effect1" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="item active"><h3>IT Consultant <i class="fa fa-briefcase"></i></h3></div>
-										<div class="item"><h3>Presales consultant</h3></div>
-                    <div class="item"><h3><i class="fa fa-trophy icon-champ"></i> Middleware champion</h3></div>
-                    <div class="item"><h3>Solution Architect</h3></div>
-										<div class="item"><h3><i class="fa fa-cloud icon-cloud"></i> Cloud engineer</h3></div>
-                    <div class="item"><h3>DevOps</h3></div>
-                </div>
-            </div>
-            <!-- Slideshow end -->
-        <a href="#about" class="btn btn-reference btn-lg scroll scrollpoint sp-effect1" role="button"><i class="fa fa-smile-o"></i> Get to know me</a>
-        <a href="#contact" class="btn btn-reference btn-lg scroll scrollpoint sp-effect2" role="button"><i class="fa fa-bolt"></i> Contact me</a>
-        </div>
     </header>
     <!-- ==========================
     	HEADER - END
@@ -190,6 +130,38 @@
     <!-- ==========================
     	ABOUT - END
     =========================== -->
+
+		<!-- ==========================
+		  BLOG - START
+		=========================== -->
+		<section id="blog" class="content-first">
+		  <div class="container">
+		      <h2 class="scrollpoint sp-effect3">Latest Blog Posts</h2>
+		      <p class="scrollpoint sp-effect3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in turpis quam. Nulla quis eleifend lectus.</p>
+		    </div>
+
+		    <div class="line hidden-xs">
+		      <div class="container">
+		            <div class="row">
+		                <div class="col-sm-4"><i class="fa fa-bullhorn"></i></div>
+		                <div class="col-sm-4"><i class="fa fa-bullhorn"></i></div>
+		                <div class="col-sm-4"><i class="fa fa-bullhorn"></i></div>
+		            </div>
+		        </div>
+		    </div>
+
+		    <div class="container">
+		        <div class="row"><!-- MAIN ROW - Start -->
+							{{ range first 10 .Data.Pages }}
+									{{ .Render "blog" }}
+							{{ end }}
+		        </div><!-- MAIN ROW - end -->
+		    </div><!-- CONTAINER - end -->
+		</section>
+		<!-- ==========================
+		  BLOG - END
+		=========================== -->
+
 
      <!-- ==========================
     	SERVICER - START
