@@ -216,13 +216,13 @@ h4 {
 	/*font-family:'Alegreya Sans SC';*/
 	margin-top:6px;
 	font-size:16px;
-	border-left:4px solid transparent;
+	border-bottom:4px solid transparent;
 	transition-duration:0.7s;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
 	color:#326799;
-	border-left:4px solid #326799;
+	border-bottom:4px solid #326799;
 }
 
 .navbar-collapse {
