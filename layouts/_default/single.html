@@ -1,45 +1,44 @@
 {{ partial "head.html" . }}
-{{ partial "navbar.html" . }}
-
-
-</header>
-<div class="container">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="well well-sm">
+{{ partial "blogbar.html" . }}
+<body id="page-top">
+  <section id="post" class="content-first">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="well well-sm">
                     <h3>{{ .Title }}<br> <small>{{ .Description }}</small></h3>
                     <hr>
                     {{ .Content }}
-            </div>
-            <div class="well well-sm">
-                {{ with .Prev }}
-                <a class="btn btn-primary btn-xs" href="{{ .Permalink }}"><span class="fa fa-angle-double-left"></span> {{ .Title }}</a>
-                {{ end }}
+                </div>
+                <div class="well well-sm">
+                    {{ with .Prev }}
+                    <a class="btn btn-primary" href="{{ .Permalink }}"><span class="fa fa-angle-double-left"></span> {{ .Title }}</a>
+                    {{ end }}
 
-                {{ with .Next }}
-                <a class="btn btn-primary btn-xs" href="{{ .Permalink }}">{{ .Title }} <span class="fa fa-angle-double-right"></span></a>
-                {{ end }}
+                    {{ with .Next }}
+                    <a class="btn btn-primary" href="{{ .Permalink }}">{{ .Title }} <span class="fa fa-angle-double-right"></span></a>
+                    {{ end }}
+                </div>
             </div>
-        </div>
 
-        <!-- Sidebar -->
-        <div class="col-md-3">
-            <div class="well well-sm"> <!-- Post-specific stats -->
-                <h4>{{ .Date.Format "January 2, 2006" }}<br>
-                <small>{{ .WordCount }} words</small></h4>
-                <hr>
-                <strong>Categories</strong>
-                <ul class="list-unstyled">
-                {{ range .Params.categories }}
-                    <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
-                {{ end }}
-                </ul>
-                <hr>
-                <strong>Tags</strong><br>
-                {{ range .Params.tags }}<a class="label label-default" href="/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="well well-sm"> <!-- Post-specific stats -->
+                    <h4>{{ .Date.Format "January 2, 2006" }}<br>
+                    <small>{{ .WordCount }} words</small></h4>
+                    <hr>
+                    <strong>Categories</strong>
+                    <ul class="list-unstyled">
+                    {{ range .Params.categories }}
+                        <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
+                    {{ end }}
+                    </ul>
+                    <hr>
+                    <strong>Tags</strong><br>
+                    {{ range .Params.tags }}<a class="label label-default" href="/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+                </div>
             </div>
         </div>
     </div>
-</div>
-
+</section>
 {{ partial "foot.html" . }}

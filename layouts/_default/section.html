@@ -1,18 +1,20 @@
 {{ partial "head.html" . }}
-{{ partial "navbar.html" . }}
-</header>
+{{ partial "blogbar.html" . }}
+<body id="page-top">
+  <section id="posts" class="content-first">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 ">
+            {{ range first 10 .Data.Pages }}
+                {{ .Render "li" }}
+            {{ end }}
+            </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-9">
-        {{ range first 10 .Data.Pages }}
-            {{ .Render "li" }}
-        {{ end }}
-        </div>
-
-        <!-- Sidebar -->
-        <div class="col-md-3">
-        {{ partial "menu.html" . }}
+            <!-- Sidebar -->
+            <!-- <div class="col-md-3">
+            {{ partial "menu.html" . }}
+            </div> -->
         </div>
     </div>
-</div>
+  </section>
+</body>

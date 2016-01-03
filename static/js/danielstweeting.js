@@ -13,20 +13,20 @@ var twitterConfig = {
 function handleTweets(tweets){
     var x = tweets.length;
     var n = 0;
-    var element = document.getElementById('example2');
-    //var html = '<div class="item">';
-    var html = ''
-    while(n < x) {
-      if (n==0) {
-      	html += '<div class="item active">' + tweets[n] + '</div>';
+    var element = document.getElementById('tweeting');
+    if (element) {
+      var html = ''
+      while(n < x) {
+        if (n==0) {
+        	html += '<div class="item active">' + tweets[n] + '</div>';
+        }
+        else {
+        	html += '<div class="item">' + tweets[n] + '</div>';
+        }
+        n++;
       }
-      else {
-      	html += '<div class="item">' + tweets[n] + '</div>';
-      }
-      n++;
+      element.innerHTML = html;
     }
-    //html += '</div>';
-    element.innerHTML = html;
 }
 
 twitterFetcher.fetch(twitterConfig);
