@@ -232,8 +232,6 @@ h4 {
 	transition-duration:0.7s;
 }
 
-
-
 .navbar-default .navbar-nav > li > a {
 	color:#A5A8B0;
 	font-family: 'Lato', sans-serif;
@@ -860,9 +858,9 @@ blockquote footer {
 }
 
 .blog-post .blog-info > a {
-    display: table-cell;
-    float: none;
-    width: 1%;
+  display: table-cell;
+  float: none;
+  width: 1%;
 	background-color:#f0f0f0;
 	text-align:center;
 	border-right:1px solid #dddddd;
